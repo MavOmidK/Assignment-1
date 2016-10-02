@@ -5,10 +5,14 @@ public class ShipController : MonoBehaviour {
     // PRIVATE +++++++++++++++++++++++ //
     private Transform _transform;
 
-	// Use this for initialization
-	void Start () {
+    // PUBLIC ++++++++++++++++++++++++ //
+    public AudioSource meteorCrashSound;
+    public AudioSource partPickUpSound;
+
+    // Use this for initialization
+    void Start () {
         this._transform = this.GetComponent<Transform>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,11 +27,11 @@ public class ShipController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Part")) {
-            Debug.Log("Part Collected!");
+            this.partPickUpSound.Play();
         }
 
         if (other.gameObject.CompareTag("Meteor")) {
-            Debug.Log("Meteor Hit!");
+            this.meteorCrashSound.Play();
         }
     }
 }
