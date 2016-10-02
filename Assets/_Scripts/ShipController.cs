@@ -6,6 +6,9 @@ public class ShipController : MonoBehaviour {
     private Transform _transform;
 
     // PUBLIC ++++++++++++++++++++++++ //
+    public GameController gameController;
+
+    [Header("Sounds")]
     public AudioSource meteorCrashSound;
     public AudioSource partPickUpSound;
 
@@ -28,10 +31,12 @@ public class ShipController : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Part")) {
             this.partPickUpSound.Play();
+            this.gameController.ScoreValue += 100;
         }
 
         if (other.gameObject.CompareTag("Meteor")) {
             this.meteorCrashSound.Play();
+            this.gameController.LivesValue -= 1;
         }
     }
 }
