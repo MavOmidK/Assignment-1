@@ -25,6 +25,9 @@ public class ShipController : MonoBehaviour {
         if (other.gameObject.CompareTag("Part")) {
             Debug.Log("Part Collected!");
         }
-    }
 
+        if (other.gameObject.CompareTag("Meteor")) {
+            Debug.Log("Meteor Hit!");
+        }
+    }
 }

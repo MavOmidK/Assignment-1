@@ -22,7 +22,7 @@ public class SpaceController : MonoBehaviour {
 	void Start ()
     {
         this._transform = this.GetComponent<Transform>();
-        this._speed = 5;
+        this._reset();
 	}
 	
 	// Update is called once per frame
@@ -51,6 +51,7 @@ public class SpaceController : MonoBehaviour {
     // Resets the game to the original postion
     private void _reset()
     {
+        this._speed = 5;
         this.transform.position = new Vector2(0f, 560f);
     }
 }
