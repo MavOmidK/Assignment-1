@@ -23,7 +23,6 @@ public class SpaceController : MonoBehaviour {
     {
         this._transform = this.GetComponent<Transform>();
         this._speed = 5;
-
 	}
 	
 	// Update is called once per frame
