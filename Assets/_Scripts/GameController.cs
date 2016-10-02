@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
     // Private ++++++++++++++++++++++++++++++ //
     private int _livesValue;
     private int _scoreValue;
+    private AudioSource _endGameSound;
 
     // Public +++++++++++++++++++++++++++++++ //
     public int LivesValue {
@@ -63,6 +64,8 @@ public class GameController : MonoBehaviour {
         this.FinalScoreLabel.gameObject.SetActive(false);
         this.RestartButton.gameObject.SetActive(false);
 
+        this._endGameSound = this.GetComponent<AudioSource>();
+
         for (int meteorCount = 0; meteorCount < this.meteorNumber; meteorCount++) {
             Instantiate(meteor);
         }
@@ -82,6 +85,7 @@ public class GameController : MonoBehaviour {
         this.ScoreLabel.gameObject.SetActive(false);
         this.Ship.SetActive(false);
         this.Part.SetActive(false);
+        this._endGameSound.Play();
     }
 
     // PUBLIC METHODS +++++++++++++++++++++= //
