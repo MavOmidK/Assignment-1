@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: Scroll
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the QUAD object. It's my scrolling background
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class Scroll : MonoBehaviour {

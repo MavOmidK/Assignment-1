@@ -1,4 +1,12 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: SpaceController
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the BackGround
+ * NOT USED
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class SpaceController : MonoBehaviour {

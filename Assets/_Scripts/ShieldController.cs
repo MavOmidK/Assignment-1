@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: ShieldController
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the Shield Powerup
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class ShieldController : MonoBehaviour {

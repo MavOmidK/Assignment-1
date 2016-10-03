@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: MenuController
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the Menu
+ */
+ 
+ using UnityEngine;
 using System.Collections;
 
 // reference to Scene Management

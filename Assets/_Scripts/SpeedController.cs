@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: SpeedController
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the Speed Powerup
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class SpeedController : MonoBehaviour {

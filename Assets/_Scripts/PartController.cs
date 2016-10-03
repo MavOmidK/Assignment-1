@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: PartController
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the Ship Part Pickup
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class PartController : MonoBehaviour {

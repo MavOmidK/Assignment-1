@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: MeteorController
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the Meteor
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class MeteorController : MonoBehaviour {

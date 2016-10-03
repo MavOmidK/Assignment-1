@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * File Name: GameController
+ * Author: Omid Khataee
+ * Last Modified: 10/3/2016
+ * Program Description: Controller for the Main Game
+ */
+
+using UnityEngine;
 using System.Collections;
 
 // Reference to the UI nameSpace
