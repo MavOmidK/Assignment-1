@@ -6,6 +6,7 @@ public class PartController : MonoBehaviour {
     // PRIVATE +++++++++++++++++++++++++ //
     private int _speed;
     private Transform _transform;
+    private int _spawn;
 
     // PUBLIC ++++++++++++++++++++++++++ //
     public int Speed {
@@ -39,8 +40,11 @@ public class PartController : MonoBehaviour {
 
     // Checks to see if the game object meets the top-border of the screen
     private void _checkBounds() {
+        _spawn = Random.Range(1, 255);
         if (this.transform.position.y <= -270f) {
-            this._reset();
+            if (_spawn == 233) {
+                this._reset();
+            }
         }
     }
 
